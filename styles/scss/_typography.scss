@@ -1,0 +1,29 @@
+@import "base";
+body{
+    font-family: 'Manrope', sans-serif;   
+}
+
+.card__desc h2{
+    font-size: pxToRem(16px);
+    color: $Very-Dark-Grayish-Blue;
+}
+
+.card__desc p{
+    font-size: pxToRem(13.2px);
+    color: $Desaturated-Dark-Blue;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+}
+
+.card__footer{
+    font-size: pxToRem(13px);
+}
+
+.profile__user{
+    font-weight: 700;
+    color: $Very-Dark-Grayish-Blue;
+}
+
+.profile__date{
+    color: $Grayish-Blue;
+}

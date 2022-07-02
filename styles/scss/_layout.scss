@@ -1,0 +1,58 @@
+@import "base";
+
+body{
+    background: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    width: pxToRem(325px);
+    margin: 0 auto;
+    background: white;
+    border-radius:pxToRem(10px);
+}
+
+.card__image img{
+    width: 100%;
+    max-height: pxToRem(200px);
+    display: block;
+    border-radius: pxToRem(10px) pxToRem(10px) 0 0 ;
+}
+
+.card__desc{
+    padding: pxToRem(30px) pxToRem(30px) pxToRem(20px) pxToRem(30px) ;
+}
+
+.card__desc h2{
+    margin-bottom: pxToRem(10px);
+
+}
+
+.card__footer{
+    border-radius:0 0 pxToRem(10px) pxToRem(10px);
+    display: flex;
+    height: pxToRem(64px);
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: pxToRem(10px);
+}
+
+.profile__data{
+    display: flex;
+    align-items: center;
+    gap: pxToRem(10px);
+}
+
+ .profile-pic{
+    width: pxToRem(40px);
+    border-radius: 50%;
+ }
+
+ #shareBtn{
+    background: $Light-Grayish-Blue;
+    border-radius: 50%;
+    padding: pxToRem(9px);
+    cursor: pointer;
+ }

@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.card__desc h2 {
+  font-size: 1rem;
+  color: hsl(217deg, 19%, 35%);
+}
+
+.card__desc p {
+  font-size: 0.825rem;
+  color: hsl(214deg, 17%, 51%);
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+
+.card__footer {
+  font-size: 0.8125rem;
+}
+
+.profile__user {
+  font-weight: 700;
+  color: hsl(217deg, 19%, 35%);
+}
+
+.profile__date {
+  color: hsl(212deg, 23%, 69%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  width: 20.3125rem;
+  margin: 0 auto;
+  background: white;
+  border-radius: 0.625rem;
+}
+
+.card__image img {
+  width: 100%;
+  max-height: 12.5rem;
+  display: block;
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.card__desc {
+  padding: 1.875rem 1.875rem 1.25rem 1.875rem;
+}
+
+.card__desc h2 {
+  margin-bottom: 0.625rem;
+}
+
+.card__footer {
+  border-radius: 0 0 0.625rem 0.625rem;
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 0.625rem;
+}
+
+.profile__data {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.profile-pic {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+#shareBtn {
+  background: hsl(210deg, 46%, 95%);
+  border-radius: 50%;
+  padding: 0.5625rem;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=main.css.map */
