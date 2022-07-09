@@ -1,58 +1,171 @@
 @import "base";
 
-body{
+body {
     background: black;
     height: 100vh;
     display: flex;
     align-items: center;
 }
 
-.card{
+.card {
     width: pxToRem(325px);
     margin: 0 auto;
     background: white;
-    border-radius:pxToRem(10px);
+    border-radius: pxToRem(10px);
+    position: relative;
 }
 
-.card__image img{
+.card__image img {
     width: 100%;
-    max-height: pxToRem(200px);
+    height: 100%;
     display: block;
-    border-radius: pxToRem(10px) pxToRem(10px) 0 0 ;
+    border-radius: pxToRem(10px) pxToRem(10px) 0 0;
 }
 
-.card__desc{
-    padding: pxToRem(30px) pxToRem(30px) pxToRem(20px) pxToRem(30px) ;
+.card__desc {
+    padding: pxToRem(30px) pxToRem(30px) pxToRem(20px) pxToRem(30px);
 }
 
-.card__desc h2{
+.card__desc h2 {
     margin-bottom: pxToRem(10px);
 
 }
 
-.card__footer{
-    border-radius:0 0 pxToRem(10px) pxToRem(10px);
+.card__footer {
+    border-radius: 0 0 pxToRem(10px) pxToRem(10px);
     display: flex;
     height: pxToRem(64px);
     align-items: center;
     justify-content: space-around;
-    margin-bottom: pxToRem(10px);
+   
 }
 
-.profile__data{
+.profile__data {
     display: flex;
     align-items: center;
-    gap: pxToRem(10px);
+    gap: pxToRem(18px);
 }
 
- .profile-pic{
+.profile-pic {
     width: pxToRem(40px);
     border-radius: 50%;
- }
+}
 
- #shareBtn{
-    background: $Light-Grayish-Blue;
+.shareBtn {
+    background-color: $Light-Grayish-Blue;
     border-radius: 50%;
-    padding: pxToRem(9px);
     cursor: pointer;
- }
+    width: pxToRem(30px);
+    height: pxToRem(30px);
+    border: none;
+    
+}
+
+.shareBtn:active{
+    background: $Grayish-Blue;
+    svg path {
+        fill: white;
+    }
+}
+
+.share-modal{
+    background-color:$Very-Dark-Grayish-Blue;
+    margin: 0;
+    display: none;
+}
+
+.share-modal .shareBtn{
+    background: $Grayish-Blue;
+    svg path {
+        fill: white;
+    }
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+}
+.social p{
+ color: $Grayish-Blue;
+ text-transform: uppercase;
+ font-size: pxToRem(13px);
+ line-height: pxToRem(20px);
+ letter-spacing: pxToRem(5px);
+}
+
+.links{
+    display: flex;
+    gap: pxToRem(20px);
+    margin-left: pxToRem(10px);
+    align-items: center;
+}
+
+.pop-up{
+    display: none;
+}
+
+
+@media screen and (min-width:767px) {
+    .card{
+        display: flex;
+        width: pxToRem(730px);
+        min-height: pxToRem(280px);
+    }
+    .card__image img{
+        width: pxToRem(285px);
+        max-height: pxToRem(280px);
+        border-radius: pxToRem(10px) 0  0 pxToRem(10px) ;
+        
+    }
+
+    .flexyboi{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card__footer{
+        width: 100%;
+        gap: pxToRem(100px);
+        align-items: center;
+        justify-items: flex-start;
+    }
+
+    .card__desc h2{
+        font-size: pxToRem(20px);
+    }
+
+    .card__desc{
+        padding: pxToRem(30px) pxToRem(60px) pxToRem(10px) pxToRem(30px);
+    }
+
+    .pop-up{
+        background-color: $Very-Dark-Grayish-Blue;
+        display: none;
+        position: absolute;
+        height: pxToRem(54px);
+        width: pxToRem(248px);
+        align-items: center;
+       justify-content: center;
+       border-radius: pxToRem(10px);
+       top: pxToRem(125px);
+       right: pxToRem(-73px);
+    }
+
+    .pop-up::before{
+        content: '';
+        width: pxToRem(20px);
+        height: pxToRem(20px);
+        background-color: $Very-Dark-Grayish-Blue;
+        position: absolute;
+        bottom: pxToRem(-10px);
+        transform: rotate(45deg);
+        
+        
+    }
+
+
+
+
+    
+}
