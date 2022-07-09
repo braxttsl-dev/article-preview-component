@@ -1,15 +1,15 @@
 const profile = document.querySelector(".card__profile")
-const share = document.querySelector(".share-modal");
-const shareBtnActive = document.querySelector("#shareBtnActive")
-const shareBtnUnactive = document.querySelector("#shareBtnUnactive")
+const share = document.querySelector(".card__share");
+const shareProfileBtn = document.querySelector("#shareProfileBtn")
+const sharePromptBtn = document.querySelector("#sharePromptBtn")
 
 
-shareBtnUnactive.addEventListener("click", () => {
+sharePromptBtn.addEventListener("click", () => {
    share.classList.toggle("flex")
 })
 
 
-shareBtnActive.addEventListener("click", () => {
+shareProfileBtn.addEventListener("click", () => {
     share.classList.remove("flex")
 
    
