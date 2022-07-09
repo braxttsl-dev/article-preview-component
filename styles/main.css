@@ -5,12 +5,12 @@
   box-sizing: border-box;
 }
 
-.active {
-  display: none;
+.flex {
+  display: flex;
 }
 
-.unactive {
-  display: flex;
+.none {
+  display: none;
 }
 
 body {
@@ -49,12 +49,12 @@ body {
   box-sizing: border-box;
 }
 
-.active {
-  display: none;
+.flex {
+  display: flex;
 }
 
-.unactive {
-  display: flex;
+.none {
+  display: none;
 }
 
 body {
@@ -93,6 +93,7 @@ body {
   height: 4rem;
   align-items: center;
   justify-content: space-around;
+  position: relative;
 }
 
 .profile__data {
@@ -126,6 +127,9 @@ body {
   background-color: hsl(217deg, 19%, 35%);
   margin: 0;
   display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .share-modal .shareBtn {
@@ -153,10 +157,6 @@ body {
   gap: 1.25rem;
   margin-left: 0.625rem;
   align-items: center;
-}
-
-.pop-up {
-  display: none;
 }
 
 @media screen and (min-width: 767px) {
@@ -193,27 +193,27 @@ body {
     padding: 1.875rem 3.75rem 0.625rem 1.875rem;
   }
 
-  .pop-up {
-    background-color: hsl(217deg, 19%, 35%);
-    display: none;
-    position: absolute;
-    height: 3.375rem;
+  .share-modal {
     width: 15.5rem;
-    align-items: center;
-    justify-content: center;
+    height: 3.4375rem;
     border-radius: 0.625rem;
-    top: 7.8125rem;
-    right: -4.5625rem;
+    top: 122px;
+    right: -75px;
   }
 
-  .pop-up::before {
+  .share-modal::after {
     content: "";
     width: 1.25rem;
     height: 1.25rem;
-    background-color: hsl(217deg, 19%, 35%);
     position: absolute;
-    bottom: -0.625rem;
+    background-color: hsl(217deg, 19%, 35%);
+    bottom: -10px;
     transform: rotate(45deg);
+    z-index: 1;
+  }
+
+  .share-modal button {
+    display: none;
   }
 }
 * {
@@ -223,10 +223,10 @@ body {
   box-sizing: border-box;
 }
 
-.active {
-  display: none;
+.flex {
+  display: flex;
 }
 
-.unactive {
-  display: flex;
+.none {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

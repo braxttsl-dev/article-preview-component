@@ -37,6 +37,7 @@ body {
     height: pxToRem(64px);
     align-items: center;
     justify-content: space-around;
+    position: relative;
    
 }
 
@@ -72,6 +73,11 @@ body {
     background-color:$Very-Dark-Grayish-Blue;
     margin: 0;
     display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+
 }
 
 .share-modal .shareBtn{
@@ -100,9 +106,6 @@ body {
     align-items: center;
 }
 
-.pop-up{
-    display: none;
-}
 
 
 @media screen and (min-width:767px) {
@@ -139,30 +142,30 @@ body {
         padding: pxToRem(30px) pxToRem(60px) pxToRem(10px) pxToRem(30px);
     }
 
-    .pop-up{
-        background-color: $Very-Dark-Grayish-Blue;
-        display: none;
-        position: absolute;
-        height: pxToRem(54px);
+    .share-modal{
         width: pxToRem(248px);
-        align-items: center;
-       justify-content: center;
-       border-radius: pxToRem(10px);
-       top: pxToRem(125px);
-       right: pxToRem(-73px);
+        height: pxToRem(55px);
+        border-radius: pxToRem(10px);
+        top: 122px;
+        right: -75px;
     }
 
-    .pop-up::before{
-        content: '';
+    .share-modal::after{
+        content: "";
         width: pxToRem(20px);
         height: pxToRem(20px);
-        background-color: $Very-Dark-Grayish-Blue;
         position: absolute;
-        bottom: pxToRem(-10px);
+        background-color: $Very-Dark-Grayish-Blue;
+        bottom: -10px;
         transform: rotate(45deg);
-        
-        
+        z-index: 1;
     }
+
+    .share-modal button{
+        display: none;
+    }
+
+
 
 
 
